@@ -31,20 +31,7 @@ const getPriceStrategies = {
 };
 
 const getPrice = (originalPrice, typePromotion) => {
-  // if (typePromotion === "preOrder") {
-  //   return preOrderPrice(originalPrice);
-  // }
-
-  // if (typePromotion === "blackFriday") {
-  //   return blackFridayPrice(originalPrice);
-  // }
-
-  // if (typePromotion === "promotion") {
-  //   return promotionPrice(originalPrice);
-  // }
-
   return getPriceStrategies[typePromotion](originalPrice)
-
 };
 
 console.log(`==> PRICE:::`, getPrice(200, "nodayPrice"));
