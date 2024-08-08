@@ -18,11 +18,16 @@ const blackFridayPrice = (originalPrice) => {
   return originalPrice * 0.9;
 };
 
+const nodayPrice = (originalPrice) => {
+  return originalPrice
+}
+
 const getPriceStrategies = {
   preOrder: preOrderPrice,
   promotion: promotionPrice,
   blackFriday: blackFridayPrice,
   default: defaultPrice,
+  nodayPrice: nodayPrice
 };
 
 const getPrice = (originalPrice, typePromotion) => {
@@ -42,4 +47,4 @@ const getPrice = (originalPrice, typePromotion) => {
 
 };
 
-console.log(`==> PRICE:::`, getPrice(200, "preOrder"));
+console.log(`==> PRICE:::`, getPrice(200, "nodayPrice"));
