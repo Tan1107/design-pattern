@@ -1,0 +1,21 @@
+{
+  "name": "groupchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc -d docs ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "*",
+    "express": "^5.0.0-alpha.8",
+    "express-ws": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}
